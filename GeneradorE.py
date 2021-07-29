@@ -21,16 +21,37 @@ def getAcorde(notaRaiz, escala):
     print()
 
 
+print('''
+0. Do
+1. DO#
+2. RE
+3. RE#
+4. MI
+5. FA
+6. FA#
+7. SOL
+8. SOL#
+9. LA
+10. LA#
+11. SI
+''')
+
+notaIndex = int(input("Escriba el numero de nota: "))
+
 maxAcordes = 8
 contadorAcordes = 0
-escala = getEcala(0)
+escala = getEcala(notaIndex)
 
+# Se imprime nombres de la escala
+print("Escala:")
 for i in escala:
     contadorAcordes += 1
     if (contadorAcordes == maxAcordes):
         break
     print(nombreNotas[i % 12])
 
+# Se imprime Acordes
+print("\nAcordes:")
 contadorAcordes = 0
 for notaRaiz in escala:
     contadorAcordes += 1
