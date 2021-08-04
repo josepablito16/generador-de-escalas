@@ -14,12 +14,37 @@ def getEcala(notaInicial):
 
 
 def getAcorde(notaRaiz, escala):
+    return [nombreNotas[escala[notaRaiz] % 12],
+            nombreNotas[escala[notaRaiz + 2] % 12],
+            nombreNotas[escala[notaRaiz + 4] % 12]]
 
-    print(nombreNotas[escala[notaRaiz] % 12])
-    print(nombreNotas[escala[notaRaiz + 2] % 12])
-    print(nombreNotas[escala[notaRaiz + 4] % 12])
-    print()
 
+def getClaseAcorde(acorde):
+    nota1 = nombreNotas.index(acorde[0])
+    nota2 = nombreNotas.index(acorde[1])
+    nota3 = nombreNotas.index(acorde[2])
+
+    rango1 = abs(nota2 -nota1)
+    rango2 = abs(nota3 -nota2)
+
+    if(rango1 == 9):
+        rango1 = 3
+
+    if(rango2 == 9):
+        rango2 = 3
+    
+    # clasificacion de acordes
+    if(rango1 == 4 and rango2 ==3):
+        print(f"{acorde[0]} Mayor")
+    
+    if(rango1 == 3 and rango2 ==4):
+        print(f"{acorde[0]} Menor")
+    
+    if(rango1 == 3 and rango2 ==3):
+        print(f"{acorde[0]} Disminuido")
+    
+    if(rango1 == 4 and rango2 ==4):
+        print(f"{acorde[0]} Aumentado")
 
 print('''
 0. Do
@@ -58,4 +83,7 @@ for notaRaiz in escala:
     if (contadorAcordes == maxAcordes):
         break
     print("Acorde # "+str(contadorAcordes))
-    getAcorde(escala.index(notaRaiz), escala)
+    acorde = getAcorde(escala.index(notaRaiz), escala)
+    getClaseAcorde(acorde)
+    print('-'.join(acorde))
+    print()
