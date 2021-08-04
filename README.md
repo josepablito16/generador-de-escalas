@@ -37,37 +37,30 @@ FA#
 ```
 Acordes:
 Acorde # 1
-SOL
-SI
-RE
+SOL Mayor
+SOL-SI-RE
 
 Acorde # 2
-LA
-Do
-MI
+LA Menor
+LA-Do-MI
 
 Acorde # 3
-SI
-RE
-FA#
+SI Menor
+SI-RE-FA#
 
 Acorde # 4
-Do
-MI
-SOL
+Do Mayor
+Do-MI-SOL
 
 Acorde # 5
-RE
-FA#
-LA
+RE Mayor
+RE-FA#-LA
 
 Acorde # 6
-MI
-SOL
-SI
+MI Menor
+MI-SOL-SI
 
 Acorde # 7
-FA#
-LA
-Do
+FA# Disminuido
+FA#-LA-Do
 ```
