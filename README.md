@@ -4,6 +4,7 @@
 
 ### Selección de nota
 ```
+Python 3 GeneradorE.py
 0. Do
 1. DO#
 2. RE
@@ -64,3 +65,46 @@ Acorde # 7
 FA# Disminuido
 FA#-LA-Do
 ```
+
+# Generador Tonal
+## Ejemplo de ejecución
+
+### Input de Usuario
+```
+Python 3 GeneradorTonal.py
+0. Primer Grado
+1. Segundo Grado
+2. Tercer Grado
+3. Cuarto Grado
+4. Quinto Grado
+5. Sexto Grado
+6. Septimo Grado
+
+Escriba el numero de grado: 1
+
+0. Do
+1. DO#
+2. RE
+3. RE#
+4. MI
+5. FA
+6. FA#
+7. SOL
+8. SOL#
+9. LA
+10. LA#
+11. SI
+
+Escriba el numero de nota: 0
+```
+En este caso Segundo Grado de Do
+
+### Salida del Programa
+```
+Acorde:
+RE Menor
+RE-FA-LA
+Funcion Tonal: Subdominante
+```
+
+
